@@ -77,12 +77,4 @@ export const handler = async (event) => {
         body: JSON.stringify({ error: "Method not allowed" }),
       };
     }
-  } catch (err) {
-    console.error(err);
-    return {
-      statusCode: 500,
-      headers,
-      body: JSON.stringify({ error: err.message }),
-    };
-  }
-};
+
